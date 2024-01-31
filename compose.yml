@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  webapp:
+    container_name: tvk
+    build:
+      context: .
+      dockerfile: Dockerfile
+    user: "node"
+    environment:
+      - TZ=Europe/Budapest
+    restart: unless-stopped
+    ports:
+      - 3000:3000
