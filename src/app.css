@@ -1,9 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+h1 {
+	@apply text-3xl;
+}
+
+h2 {
+	@apply text-2xl;
+}
+
+h3 {
+	@apply text-xl;
+}
+
 body {
-  font-family: 'Ubuntu', sans-serif;
+  @apply dark:bg-stone-700 dark:text-stone-200 text-stone-700 bg-stone-100 text-lg max-w-[650px] mx-auto my-4 md:my-10 px-4 leading-relaxed font-serif;
+}
+
+h1,
+h2,
+h3 {
+	@apply text-stone-800 dark:text-stone-100 leading-tight;
+}
+
+h2 {
+	@apply mt-4;
+}
+
+h3 {
+	@apply mt-3;
+}
+
+a {
+	@apply text-sky-700 dark:text-sky-300;
+}
+
+ul {
+	@apply list-decimal md:ml-0 ml-8;
 }
